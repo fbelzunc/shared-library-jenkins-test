@@ -1,3 +1,6 @@
+// src/org/foo/Bar.groovy
+package org.foo;
+
 class JenkinsJob {
 	public String shortName; 
 	public String fullProjName; 
