@@ -16,7 +16,7 @@ class JenkinsJob {
 	}
 
 	static class ListBuilder {
-		public List<JenkinsJob>; jobList = new ListBuilder<>(); 
+		public List<JenkinsJob> jobList = new ListBuilder<>(); 
 
 		ListBuilder addJob(String shortName, String fullPath) {
 			jobList.add(new JenkinsJob())
