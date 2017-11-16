@@ -4,12 +4,10 @@ package org.foo;
 class JenkinsJob {
 	public String shortName; 
 	public String fullProjName; 
-	public List <Selector> selectors; 
 
-	public JenkinsJob(String shortName, String fullProjName, List<Selector> selectors) {
+	public JenkinsJob(String shortName, String fullProjName) {
 		this.shortName = shortName; 
 		this.fullProjName = fullProjName; 
-		this.selectors = selectors; 
 	}
 
 	static class Selector {
@@ -18,9 +16,9 @@ class JenkinsJob {
 	}
 
 	static class ListBuilder {
-		private List<JenkinsJob>; jobList = new ListBuilder<>(); 
+		public List<JenkinsJob>; jobList = new ListBuilder<>(); 
 
-		ListBuilder addJob(String shortName, String fullPath, List<Selector> selectors) {
+		ListBuilder addJob(String shortName, String fullPath) {
 			jobList.add(new JenkinsJob())
 		}
 
